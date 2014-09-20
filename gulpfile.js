@@ -7,7 +7,7 @@ gulp.task('default', ['clean'], function() {
             css: [$.minifyCss(), 'concat'],
             js: [$.uglify(), 'concat']
         }))
-        .pipe(gulp.dest('public'));
+        .pipe(gulp.dest('dist'));
 });
 
 // cleans "dist" folder which will be deployed to server
