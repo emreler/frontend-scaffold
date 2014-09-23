@@ -1,26 +1,32 @@
 <!doctype html>
 
-<html lang="en">
+<html lang="en" ng-app>
 <head>
     <meta charset="utf-8">
 
     <title>PicBox</title>
     <meta name="description" content="">
     <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- build:css css/site.css -->
     <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="css/main.css">
     <!-- endbuild -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
 </head>
 
 <body>
-<div class="alert alert-success" role="alert"><strong>Well done!</strong> You successfully read this important alert message.</div>
-
+<div class="container">
+    <button id="instagram-login" type="button" class="btn btn-default"><i class="fa fa-instagram fa-1x"></i> Login with Instagram</button>
+</div>
 <!-- build:js js/site.js -->
 <script src="../bower_components/jquery/dist/jquery.js"></script>
 <script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="../bower_components/angular/angular.js"></script>
+<script src="../bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="js/config.js"></script>
 <script src="js/main.js"></script>
 <!-- endbuild -->
 
