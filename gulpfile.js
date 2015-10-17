@@ -1,7 +1,11 @@
 var gulp = require('gulp');
+var del = require('del');
 $ = require('gulp-load-plugins')();
 
-// default task. concatenates, minifies/uglifies asset files, appends content hash to filename, replaces links in template file
+/*
+default task. concatenates, minifies/uglifies asset files, appends content
+hash to filename, replaces links in template file
+*/
 gulp.task('default', ['clean'], function () {
 
     var jsFilter = $.filter("**/*.js");
@@ -25,11 +29,10 @@ gulp.task('default', ['clean'], function () {
 
 // cleans "dist" folder which will be deployed to server
 gulp.task('clean', function() {
-    return gulp.src('dist/*')
-        .pipe($.rimraf());
+  return del('dist/*');
 });
 
 // watches for changes in "src" directory for css, js or html files
 gulp.task('watch', ['default'], function() {
-    gulp.watch('src/**/*.{css,js,html}', ['default'])
+    gulp.watch('src/**/*.{css,js,html}', ['default']);
 });

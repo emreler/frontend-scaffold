@@ -1,12 +1,5 @@
 {
-  "name": "picbox-frontend",
-  "version": "0.0.1",
-  "main": "public/index.html",
-  "authors": [
-    "Emre Kayan <emrekayan@gmail.com>"
-  ],
-  "license": "MIT",
-  "homepage": "http://picbox.io/",
+  "name": "frontend-scaffold",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -16,8 +9,6 @@
   ],
   "dependencies": {
     "jquery": "~2.1.1",
-    "bootstrap": "~3.2.0",
-    "angular": "~1.2.25",
-    "angular-ui-router": "~0.2.11"
+    "bootstrap": "~3.2.0"
   }
 }
