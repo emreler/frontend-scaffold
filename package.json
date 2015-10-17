@@ -1,20 +1,4 @@
 {
-  "name": "picbox-frontend",
-  "version": "0.0.1",
-  "description": "",
-  "main": "public/index.html",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/emreler/picbox-frontend.git"
-  },
-  "author": "Emre Kayan <emrekayan@gmail.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/emreler/picbox-frontend/issues"
-  },
   "engines": {
     "node": ">=1.12.0"
   },
